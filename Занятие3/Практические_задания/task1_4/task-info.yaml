@@ -1,0 +1,24 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  text: |
+    PI = 3.14
+
+
+    def square_circle(r):
+        return PI * r ** 2
+
+
+    if __name__ == "__main__":
+        square = square_circle(5)
+        print(square)
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  time: Sun, 24 Oct 2021 11:57:09 UTC
+record: -1
+post_submission_on_open: true

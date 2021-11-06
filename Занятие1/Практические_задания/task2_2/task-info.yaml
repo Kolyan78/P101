@@ -1,0 +1,46 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    Длина: Ширина: 30
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 39
+    length: 68
+    placeholder_text: 'input("Ширина: ")  # TODO привести к целочисленному типу данных'
+    initial_state:
+      length: 63
+      offset: 39
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: 'int(input("Ширина: "))'
+  - offset: 121
+    length: 60
+    placeholder_text: '...  # TODO посчитать периметр прямоугольника'
+    initial_state:
+      length: 45
+      offset: 116
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: (length + width) * 2
+  text: |
+    length = int(input("Длина: "))
+    width = input("Ширина: ")  # TODO привести к целочисленному типу данных
+
+    perimeter = ...  # TODO посчитать периметр прямоугольника
+
+    print(perimeter)
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sat, 16 Oct 2021 12:00:36 UTC
+record: -1

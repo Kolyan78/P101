@@ -1,0 +1,35 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 32
+    length: 72
+    placeholder_text: '...  # TODO проверка совпадения строк'
+    initial_state:
+      length: 37
+      offset: 29
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: |-
+      if str1[:k] == str2[:k]:
+              print('ДА')
+          else:
+              print('НЕТ')
+  text: |
+    def task(str1, str2, k):
+        ...  # TODO проверка совпадения строк
+
+
+    if __name__ == "__main__":
+        ...
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  time: Wed, 27 Oct 2021 17:23:24 UTC
+record: -1
+post_submission_on_open: true

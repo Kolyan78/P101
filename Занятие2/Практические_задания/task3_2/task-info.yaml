@@ -1,0 +1,36 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    'Числа А и B нечетные'
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 16
+    length: 87
+    placeholder_text: '...:  # ToDo напишите сюда условие проверки нечетности чисел
+      А и B'
+    initial_state:
+      length: 66
+      offset: 16
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: 'A % 2 == 1 and B % 2 == 1:'
+  text: |
+    A = 5
+    B = 7
+
+    if ...:  # ToDo напишите сюда условие проверки нечетности чисел А и B
+        print('Числа А и B нечетные')
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sat, 16 Oct 2021 14:00:37 UTC
+record: -1

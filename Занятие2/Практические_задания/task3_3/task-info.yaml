@@ -1,0 +1,34 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    "Утро!!!"
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 14
+    length: 54
+    placeholder_text: '...:  # ToDo условие проверки времени суток'
+    initial_state:
+      length: 43
+      offset: 14
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: '6 <= hour < 12:'
+  text: |
+    hour = 10
+
+    if ...:  # ToDo условие проверки времени суток
+        print("Утро!!!")
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Mon, 18 Oct 2021 11:40:30 UTC
+record: -1

@@ -1,0 +1,30 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 109
+    length: 30
+    placeholder_text: '[i for i in range(10)]  # TODO'
+    initial_state:
+      length: 30
+      offset: 39
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: '[i ** 2 if i % 2 == 0 else -i for i in range(10)]'
+  text: |+
+    if __name__ == "__main__":
+        list_ = [i for i in range(10)]  # TODO
+
+
+
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  time: Sat, 30 Oct 2021 12:41:02 UTC
+record: -1
+post_submission_on_open: true

@@ -1,0 +1,61 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    45
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 38
+    length: 38
+    placeholder_text: '...  # TODO заводим переменную для суммы'
+    initial_state:
+      length: 40
+      offset: 38
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: 0
+  - offset: 96
+    length: 79
+    placeholder_text: |-
+      ...:  # TODO диапазон чисел
+              ...
+    initial_state:
+      length: 39
+      offset: 98
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: |-
+      range(10):
+              sum_ += number
+  - offset: 181
+    length: 21
+    placeholder_text: '# TODO печатаем ответ'
+    initial_state:
+      length: 21
+      offset: 143
+    initialized_from_dependency: false
+    selected: false
+    status: Solved
+    encrypted_possible_answer: print(sum_)
+  text: |
+    if __name__ == "__main__":
+        sum_ = ...  # TODO заводим переменную для суммы
+
+        for number in ...:  # TODO диапазон чисел
+            ...
+
+        # TODO печатаем ответ
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 20 Oct 2021 07:26:07 UTC
+record: -1

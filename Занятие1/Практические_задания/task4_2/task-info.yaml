@@ -1,0 +1,33 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    [50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100]
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 8
+    length: 72
+    placeholder_text: '...  # TODO список целых чисел от 50 до 100 включительно'
+    initial_state:
+      length: 56
+      offset: 8
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: list(range(50, 101))
+  text: |
+    list_ = ...  # TODO список целых чисел от 50 до 100 включительно
+
+    print(list_)
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sat, 16 Oct 2021 12:20:52 UTC
+record: -1

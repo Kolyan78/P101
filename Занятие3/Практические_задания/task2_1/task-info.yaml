@@ -1,0 +1,42 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 94
+    length: 78
+    placeholder_text: '...  # TODO'
+    initial_state:
+      length: 11
+      offset: 83
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: |-
+      result = 1
+
+          while pow_ > 0:
+              result *= base
+              pow_ -= 1
+
+          return result
+  text: |
+    def pow_func(base, pow_=2):
+        # base ** pow_ -> реализовать через цикл while
+        ...  # TODO
+
+
+    if __name__ == "__main__":
+        a = 5
+        n = 3
+
+        print(pow_func(a, n))
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  time: Sat, 23 Oct 2021 07:31:50 UTC
+record: -1
+post_submission_on_open: true

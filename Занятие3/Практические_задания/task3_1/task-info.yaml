@@ -1,0 +1,43 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 33
+    length: 226
+    placeholder_text: '...  # TODO с помощью методов строки join и split очистить
+      строку от лишних пробелов'
+    initial_state:
+      length: 84
+      offset: 33
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: |-
+      words_list = str_.split(" ")
+          print(words_list)
+
+          words_list_without_empty_string = []
+          for word in words_list:
+              if word:
+                  words_list_without_empty_string.append(word)
+          print(words_list_without_empty_string)
+
+          return " ".join(words_list_without_empty_string)
+  text: |
+    def remove_whitespace(str_):
+        ...  # TODO с помощью методов строки join и split очистить строку от лишних пробелов
+
+
+    if __name__ == "__main__":
+        str_with_space = "    123.    test   print test11    "  # исходная строка
+        print(remove_whitespace(str_with_space))
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  time: Wed, 27 Oct 2021 18:28:42 UTC
+record: -1
+post_submission_on_open: true

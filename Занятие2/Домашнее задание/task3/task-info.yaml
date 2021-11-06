@@ -1,0 +1,38 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 0
+    length: 6
+    placeholder_text: '# TODO'
+    initial_state:
+      length: 6
+      offset: 0
+    initialized_from_dependency: false
+    selected: false
+    status: Solved
+    encrypted_possible_answer: |-
+      a = int(input('Введите число '))
+      b = int(input('Введите число '))
+      c = int(input('Введите число '))
+
+      result1 = a < 45 and b >= 45 and c >= 45
+      result2 = a >= 45 and b < 45 and c >= 45
+      result3 = a >= 45 and b >= 45 and c < 45
+
+      if result1 or result2 or result3:
+          print("Одно из чисел меньше 45")
+      else:
+          print("Все числа больше 45 или все числа меньше 45")
+  text: |
+    # TODO
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  time: Wed, 20 Oct 2021 15:02:17 UTC
+record: -1
+post_submission_on_open: true

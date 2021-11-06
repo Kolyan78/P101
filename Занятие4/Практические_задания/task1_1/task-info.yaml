@@ -1,0 +1,41 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 152
+    length: 62
+    placeholder_text: '[]  # TODO записать list comprehension'
+    initial_state:
+      length: 38
+      offset: 152
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: '[i ** 2 for i in range(n)]'
+  text: |
+    def list_over_for_loop(n):
+        list_ = []
+        for i in range(n):
+            list_.append(i ** 2)
+
+        return list_
+
+
+    def list_comprehension(n):
+        return []  # TODO записать list comprehension
+
+
+    if __name__ == "__main__":
+        num = 10
+        print(list_over_for_loop(num))
+        print(list_comprehension(num))
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  time: Sat, 30 Oct 2021 12:36:21 UTC
+record: -1
+post_submission_on_open: true

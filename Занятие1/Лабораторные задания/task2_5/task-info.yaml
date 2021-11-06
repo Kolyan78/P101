@@ -1,0 +1,33 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    [1, 3, 5, 7, 9]
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 8
+    length: 55
+    placeholder_text: '...  # TODO сформировать список чисел'
+    initial_state:
+      length: 37
+      offset: 8
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: list(range(1, 10, 2))
+  text: |
+    list_ = ...  # TODO сформировать список чисел
+
+    print(list_)
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sat, 16 Oct 2021 12:58:24 UTC
+record: -1

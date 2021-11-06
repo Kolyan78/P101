@@ -1,0 +1,36 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    False True
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 20
+    length: 11
+    placeholder_text: '# TODO поменяйте значения местами'
+    initial_state:
+      length: 33
+      offset: 20
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: a, b = b, a
+  text: |
+    a = True
+    b = False
+
+    # TODO поменяйте значения местами
+
+    print(a, b)
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sat, 16 Oct 2021 12:23:15 UTC
+record: -1

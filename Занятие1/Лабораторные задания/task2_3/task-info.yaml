@@ -1,0 +1,40 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    430
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 0
+    length: 38
+    placeholder_text: '...  # TODO найти количество натуральных чисел кратных 23'
+    initial_state:
+      length: 57
+      offset: 0
+    initialized_from_dependency: false
+    selected: true
+    status: Failed
+    encrypted_possible_answer: |-
+      start = 123
+      end = 9999
+      step = 23
+
+      print(len(list(range(start, end, step))))
+  text: |
+    ...  # TODO найти количество натуральных чисел кратных 23
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Failed
+feedback:
+  message: Incorrect
+  time: Sat, 16 Oct 2021 12:53:47 UTC
+  expected: |
+    430
+  actual: |
+    429
+record: -1

@@ -1,0 +1,115 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    Текущее минимальное значение 4
+    Текущий элемент 4
+    ----------
+    Текущее минимальное значение 4
+    Текущий элемент -1
+    Найден элемент меньший минимума
+    ----------
+    Текущее минимальное значение -1
+    Текущий элемент 10
+    ----------
+    Текущее минимальное значение -1
+    Текущий элемент -1
+    ----------
+    Текущее минимальное значение -1
+    Текущий элемент 3
+    ----------
+    Текущее минимальное значение -1
+    Текущий элемент -3
+    Найден элемент меньший минимума
+    ----------
+    Текущее минимальное значение -3
+    Текущий элемент -6
+    Найден элемент меньший минимума
+    ----------
+    Текущее минимальное значение -6
+    Текущий элемент 8
+    ----------
+    Текущее минимальное значение -6
+    Текущий элемент 6
+    ----------
+    Текущее минимальное значение -6
+    Текущий элемент 9
+    ----------
+    [4, -1, 10, -1, 3, -3, -6, 8, 6, 9]
+    Минимальный элемент = -6
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 157
+    length: 44
+    placeholder_text: '... # TODO как получить первый элемент?'
+    initial_state:
+      length: 39
+      offset: 157
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: list_[0]
+  - offset: 339
+    length: 36
+    placeholder_text: '...:  # TODO где будем перебирать?'
+    initial_state:
+      length: 34
+      offset: 334
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: 'list_:'
+  - offset: 652
+    length: 51
+    placeholder_text: '...:  # TODO записать условие'
+    initial_state:
+      length: 29
+      offset: 645
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: 'current_value < min_value:'
+  - offset: 807
+    length: 34
+    placeholder_text: '# TODO  если нашли, то что делаем?'
+    initial_state:
+      length: 34
+      offset: 740
+    initialized_from_dependency: false
+    selected: false
+    status: Solved
+    encrypted_possible_answer: min_value = current_value
+  text: |
+    if __name__ == "__main__":
+        list_ = [4, -1, 10, -1, 3, -3, -6, 8, 6, 9]
+
+        # предположим, что первый элемент в нашем списке минимальный
+        min_value = ... # TODO как получить первый элемент?
+
+        # а далее пройдемся по всему списку, и будем искать элемент меньший ранее найденного минимального значения
+        for current_value in ...:  # TODO где будем перебирать?
+            # если текущее значение меньше минимума, то перезаписываем минимум
+            print("Текущее минимальное значение", min_value)
+            print("Текущий элемент", current_value)
+            # если нашли элемент меньше ранее найденного минимума, то перезаписываем его
+            if ...:  # TODO записать условие
+                print("Найден элемент меньший минимума")
+                # TODO  если нашли, то что делаем?
+
+            print("-" * 10)
+
+        # после того как пройдем по всему списку, напечатаем список и  минимальный элемент
+        print(list_)
+        print("Минимальный элемент =", min_value)
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Mon, 18 Oct 2021 14:21:13 UTC
+record: -1

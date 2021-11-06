@@ -1,0 +1,23 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  text: |
+    if __name__ == "__main__":
+        # Write your solution here
+        pass
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+- name: task2.py
+  visible: true
+  learner_created: true
+- name: 12.pyi
+  visible: true
+  learner_created: true
+status: Solved
+feedback:
+  time: Sat, 06 Nov 2021 06:20:02 UTC
+record: -1
+post_submission_on_open: true

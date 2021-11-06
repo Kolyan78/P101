@@ -1,0 +1,35 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 0
+    length: 6
+    placeholder_text: '# TODO'
+    initial_state:
+      length: 6
+      offset: 0
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: |-
+      a = int(input('Введите число '))
+      b = int(input('Введите число '))
+
+      if a ** 2 + b ** 2 > (a + b) ** 2:
+          print('Сумма квадратов больше')
+      elif a ** 2 + b ** 2 < (a + b) ** 2:
+          print('Квадрат суммы больше')
+      else:
+          print('Суммы равны')
+  text: |
+    # TODO
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  time: Wed, 20 Oct 2021 06:48:55 UTC
+record: -1
+post_submission_on_open: true

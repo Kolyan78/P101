@@ -1,0 +1,42 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    -6
+    14
+    -0.42857142857142855
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 167
+    length: 0
+    placeholder_text: '# TODO найти суммуб количество и среднее уникальных чисел'
+    initial_state:
+      length: 57
+      offset: 81
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: |-
+      unique_numbers = set(list_)
+
+      sum_ = sum(unique_numbers)
+      len_ = len(unique_numbers)
+
+      print(sum_)
+      print(len_)
+      print(sum_ / len_)
+  text: |
+    list_ = [8, 9, -5, -3, 1, -10, 8, -10, -5, 0, 5, -4, 0, 10, -8, 1, 6, -6, 6, -9]
+    # TODO найти суммуб количество и среднее уникальных чисел
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sat, 16 Oct 2021 13:03:42 UTC
+record: -1

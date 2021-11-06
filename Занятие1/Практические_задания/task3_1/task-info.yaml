@@ -1,0 +1,60 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    2 5
+    7
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 17
+    length: 88
+    placeholder_text: '...  # TODO используя оператор целочисленного деления найти
+      количество десятков'
+    initial_state:
+      length: 79
+      offset: 17
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: number // 10
+  - offset: 110
+    length: 81
+    placeholder_text: '...  # TODO используя оператор остаток от деления найти количество
+      единиц'
+    initial_state:
+      length: 73
+      offset: 101
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: number % 10
+  - offset: 211
+    length: 65
+    placeholder_text: '...)  # TODO вычисления можно производить прямо в функции print'
+    initial_state:
+      length: 63
+      offset: 194
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: d + e)
+  text: |
+    number = 25
+
+    d = ...  # TODO используя оператор целочисленного деления найти количество десятков
+    e = ...  # TODO используя оператор остаток от деления найти количество единиц
+
+    print(d, e)
+    print(...)  # TODO вычисления можно производить прямо в функции print
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sat, 16 Oct 2021 12:06:52 UTC
+record: -1

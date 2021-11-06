@@ -1,0 +1,117 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    [1, 2, 3]
+    Сумма цифр 6
+    Количество цифр 3
+    Минимальная цифра 1
+    Максимальная цифра 3
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 27
+    length: 31
+    placeholder_text: ' # TODO найти число сотен'
+    initial_state:
+      length: 25
+      offset: 27
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: // 100
+  - offset: 72
+    length: 39
+    placeholder_text: '# TODO найти число десятков'
+    initial_state:
+      length: 27
+      offset: 66
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: '% 100 // 10'
+  - offset: 125
+    length: 30
+    placeholder_text: '# TODO найти число единиц'
+    initial_state:
+      length: 25
+      offset: 107
+    initialized_from_dependency: false
+    selected: false
+    status: Solved
+    encrypted_possible_answer: '% 10'
+  - offset: 170
+    length: 49
+    placeholder_text: '...  # TODO сформировать список чисел'
+    initial_state:
+      length: 37
+      offset: 147
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: '[d_1, d_2, d_3]'
+  - offset: 259
+    length: 35
+    placeholder_text: '...)  # TODO сумма цифр'
+    initial_state:
+      length: 23
+      offset: 224
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: sum(list_digit))
+  - offset: 320
+    length: 40
+    placeholder_text: '...)  # TODO количество цифр'
+    initial_state:
+      length: 28
+      offset: 273
+    initialized_from_dependency: false
+    selected: false
+    status: Solved
+    encrypted_possible_answer: len(list_digit))
+  - offset: 388
+    length: 42
+    placeholder_text: '...)  # TODO минимальная цифра'
+    initial_state:
+      length: 30
+      offset: 329
+    initialized_from_dependency: false
+    selected: false
+    status: Solved
+    encrypted_possible_answer: min(list_digit))
+  - offset: 459
+    length: 43
+    placeholder_text: '...)  # TODO максимальная цифра'
+    initial_state:
+      length: 31
+      offset: 388
+    initialized_from_dependency: false
+    selected: false
+    status: Solved
+    encrypted_possible_answer: max(list_digit))
+  text: |
+    number = 123
+
+    d_1 = number  # TODO найти число сотен
+    d_2 = number # TODO найти число десятков
+    d_3 = number # TODO найти число единиц
+
+    list_digit = ...  # TODO сформировать список чисел
+    print(list_digit)
+
+    print("Сумма цифр", ...)  # TODO сумма цифр
+    print("Количество цифр", ...)  # TODO количество цифр
+    print("Минимальная цифра", ...)  # TODO минимальная цифра
+    print("Максимальная цифра", ...)  # TODO максимальная цифра
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sat, 16 Oct 2021 12:17:55 UTC
+record: -1

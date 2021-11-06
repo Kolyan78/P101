@@ -1,0 +1,15 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  text: |
+    # Напишите ваше решение
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  time: Sat, 16 Oct 2021 12:46:36 UTC
+record: -1
+post_submission_on_open: true

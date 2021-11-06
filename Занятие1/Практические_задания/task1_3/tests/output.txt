@@ -1,0 +1,7 @@
+5 <class 'int'>
+123.321 <class 'float'>
+True False <class 'bool'>
+() <class 'tuple'>
+[] <class 'list'>
+test <class 'str'>
+{1, 2, 3} set() <class 'set'>

@@ -1,0 +1,21 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  text: |
+    def pow_func(base, pow_=2):
+        return base ** pow_
+
+
+    if __name__ == "__main__":
+        print(pow_func(4))  # по умолчанию возводим число в степень два
+        print(pow_func(3, pow_=3))  # переопределяем аргумент по умолчанию
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  time: Sun, 24 Oct 2021 11:20:29 UTC
+record: -1
+post_submission_on_open: true

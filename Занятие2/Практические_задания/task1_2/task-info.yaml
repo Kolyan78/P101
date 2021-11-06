@@ -1,0 +1,42 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    True
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 9
+    length: 1
+    placeholder_text: '...'
+    initial_state:
+      length: 3
+      offset: 9
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: <
+  - offset: 14
+    length: 69
+    placeholder_text: '# TODO Вставьте любой оператор сравнения, чтобы выжение было
+      истинным'
+    initial_state:
+      length: 69
+      offset: 16
+    initialized_from_dependency: false
+    selected: false
+    status: Solved
+    encrypted_possible_answer: '  # TODO'
+  text: |
+    print(20 ... 30)# TODO Вставьте любой оператор сравнения, чтобы выжение было истинным
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sat, 16 Oct 2021 13:55:55 UTC
+record: -1

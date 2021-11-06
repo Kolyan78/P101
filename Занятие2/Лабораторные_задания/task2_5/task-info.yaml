@@ -1,0 +1,41 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 242
+    length: 63
+    placeholder_text: '# TODO посчитать количество четных и нечетных значений в списке'
+    initial_state:
+      length: 63
+      offset: 126
+    initialized_from_dependency: false
+    selected: false
+    status: Solved
+    encrypted_possible_answer: |-
+      for value in list_:  # перебираем все числа
+          if value % 2 == 0:
+              count_even += 1
+          else:
+              count_odd += 1
+  text: |
+    list_ = [3, 4, 8, 9, 6, 6, 2, 4, 3, 3]
+
+    count_even = 0  # количество четных чисел
+    count_odd = 0  # количество нечетных чисел
+
+    # TODO посчитать количество четных и нечетных значений в списке
+
+    if count_even > count_odd:
+        print('Четных чисел больше')
+    else:
+        print('Нечетных чисел больше')
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  time: Wed, 20 Oct 2021 16:12:52 UTC
+record: -1
+post_submission_on_open: true

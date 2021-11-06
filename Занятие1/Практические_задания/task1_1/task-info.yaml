@@ -1,0 +1,38 @@
+type: theory
+files:
+- name: __init__.py
+  visible: false
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 14
+    length: 0
+    placeholder_text: '...  # TODO строковая переменная Hello World'
+    initial_state:
+      length: 44
+      offset: 14
+    initialized_from_dependency: false
+    selected: false
+    status: Solved
+    encrypted_possible_answer: '"Hello World"'
+  - offset: 14
+    length: 32
+    placeholder_text: '# TODO с помощью функции print распечатать переменную my_variable'
+    initial_state:
+      length: 65
+      offset: 60
+    initialized_from_dependency: false
+    selected: false
+    status: Solved
+    encrypted_possible_answer: print(my_variable)
+  text: |
+    my_variable = ...  # TODO строковая переменная Hello World
+
+    # TODO с помощью функции print распечатать переменную my_variable
+  learner_created: false
+status: Solved
+feedback:
+  time: Sat, 16 Oct 2021 11:56:38 UTC
+record: -1
+post_submission_on_open: true

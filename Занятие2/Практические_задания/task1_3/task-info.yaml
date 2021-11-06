@@ -1,0 +1,43 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    True
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 12
+    length: 47
+    placeholder_text: '...  # TODO Запишите логическое выражение'
+    initial_state:
+      length: 41
+      offset: 12
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: 20 != 100
+  - offset: 67
+    length: 9
+    placeholder_text: '...'
+    initial_state:
+      length: 3
+      offset: 61
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: condition
+  text: |
+    condition = ...  # TODO Запишите логическое выражение
+
+    print(...)
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sat, 16 Oct 2021 13:56:19 UTC
+record: -1

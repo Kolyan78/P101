@@ -1,0 +1,47 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 129
+    length: 30
+    placeholder_text: '# TODO посчитать через ключи'
+    initial_state:
+      length: 28
+      offset: 115
+    initialized_from_dependency: false
+    selected: false
+    status: Solved
+    encrypted_possible_answer: sum_ = 0
+  - offset: 324
+    length: 35
+    placeholder_text: '# TODO посчитать через метод values'
+    initial_state:
+      length: 35
+      offset: 229
+    initialized_from_dependency: false
+    selected: false
+    status: Solved
+    encrypted_possible_answer: print(sum(cart.values()))
+  text: |
+    if __name__ == "__main__":
+        cart = {
+            "apple": 80,
+            "orange": 65,
+            "banana": 40
+        }
+
+        # TODO посчитать через ключи
+        for fruit in cart:
+            print(cart[fruit])  # получаем значение по ключу
+
+        # TODO посчитать через метод values
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  time: Sat, 30 Oct 2021 12:41:24 UTC
+record: -1
+post_submission_on_open: true

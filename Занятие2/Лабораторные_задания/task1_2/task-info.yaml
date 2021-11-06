@@ -1,0 +1,31 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 0
+    length: 186
+    placeholder_text: '# TODO'
+    initial_state:
+      length: 6
+      offset: 0
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: |
+      a = int(input('Введите число A'))
+      b = int(input('Введите число B'))
+
+      result = a % 2 == 1 and b % 2 == 1
+      if result:
+          print("Числа A и B нечетные")
+  text: '# TODO'
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  time: Wed, 20 Oct 2021 06:22:33 UTC
+record: -1
+post_submission_on_open: true

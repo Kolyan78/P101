@@ -1,0 +1,33 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    5050
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 40
+    length: 36
+    placeholder_text: '# TODO найти сумму натуральных чисел'
+    initial_state:
+      length: 36
+      offset: 9
+    initialized_from_dependency: false
+    selected: false
+    status: Solved
+    encrypted_possible_answer: print(sum(range(1, N + 1)))
+  text: |
+    N = 100
+
+    # TODO найти сумму натуральных чисел
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sat, 16 Oct 2021 12:52:18 UTC
+record: -1

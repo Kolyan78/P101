@@ -1,0 +1,33 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    (20, 16, 12, 8, 4)
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 9
+    length: 63
+    placeholder_text: '...  # TODO сформировать кортеж целых чисел'
+    initial_state:
+      length: 43
+      offset: 9
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: tuple(range(20, 3, -4))
+  text: |
+    tuple_ = ...  # TODO сформировать кортеж целых чисел
+
+    print(tuple_)
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sat, 16 Oct 2021 12:59:55 UTC
+record: -1

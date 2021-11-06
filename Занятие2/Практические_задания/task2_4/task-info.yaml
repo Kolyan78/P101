@@ -1,0 +1,25 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: "true"
+  is_correct: false
+- text: "false"
+  is_correct: true
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: main.py
+  visible: true
+  text: |2+
+
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sat, 16 Oct 2021 13:57:33 UTC
+record: -1
+selected_options:
+- 1

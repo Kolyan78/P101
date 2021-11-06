@@ -1,0 +1,23 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  text: |
+    def counter():
+        count = count + 1
+
+        return count
+
+
+    if __name__ == "__main__":
+        count = 0
+        print(counter())  # что будет выведено?
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  time: Sun, 24 Oct 2021 12:03:08 UTC
+record: -1
+post_submission_on_open: true

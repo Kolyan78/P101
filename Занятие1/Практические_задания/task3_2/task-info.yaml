@@ -1,0 +1,105 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    12.0
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 28
+    length: 3
+    placeholder_text: '...  # TODO ввести количество страниц'
+    initial_state:
+      length: 37
+      offset: 28
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: 100
+  - offset: 40
+    length: 2
+    placeholder_text: '...  # TODO ввести количество строк'
+    initial_state:
+      length: 35
+      offset: 74
+    initialized_from_dependency: false
+    selected: false
+    status: Solved
+    encrypted_possible_answer: 50
+  - offset: 51
+    length: 2
+    placeholder_text: '...  # TODO ввести количество символов в строке'
+    initial_state:
+      length: 47
+      offset: 118
+    initialized_from_dependency: false
+    selected: false
+    status: Solved
+    encrypted_possible_answer: 25
+  - offset: 69
+    length: 63
+    placeholder_text: '...  # TODO общее количество символов в книге'
+    initial_state:
+      length: 45
+      offset: 181
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: pages * lines * chars
+  - offset: 147
+    length: 47
+    placeholder_text: '...  # TODO размер одной книги в байтах'
+    initial_state:
+      length: 39
+      offset: 241
+    initialized_from_dependency: false
+    selected: false
+    status: Solved
+    encrypted_possible_answer: total_chars * BYTES_ONE_CHAR
+  - offset: 208
+    length: 50
+    placeholder_text: '...  # TODO размер дискеты в байтах'
+    initial_state:
+      length: 35
+      offset: 294
+    initialized_from_dependency: false
+    selected: false
+    status: Solved
+    encrypted_possible_answer: '1.44 * 1024 * 1024  # размер в байтах'
+  - offset: 266
+    length: 86
+    placeholder_text: '...)  # TODO найти количество книг, которое поместится на дискете'
+    initial_state:
+      length: 65
+      offset: 337
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: disk_size // total_bytes)
+  text: |
+    BYTES_ONE_CHAR = 1
+
+    pages = ...  # TODO ввести количество страниц
+    lines = ...  # TODO ввести количество строк
+    chars = ...  # TODO ввести количество символов в строке
+
+    total_chars = ...  # TODO общее количество символов в книге
+    total_bytes = ...  # TODO размер одной книги в байтах
+
+    disk_size = ...  # TODO размер дискеты в байтах
+
+    print(...)  # TODO найти количество книг, которое поместится на дискете
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+- name: bytes_table.png
+  visible: true
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sat, 16 Oct 2021 12:13:44 UTC
+record: -1

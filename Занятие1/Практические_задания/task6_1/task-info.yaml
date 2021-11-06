@@ -1,0 +1,33 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    {1, 2, 3, 4, 5}
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 60
+    length: 76
+    placeholder_text: '...)  # TODO распечатать множество уникальных  чисел'
+    initial_state:
+      length: 52
+      offset: 60
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: set(list_duplicate_numbers))
+  text: |
+    list_duplicate_numbers = [1, 2, 3, 4, 5, 4, 3, 2, 1]
+
+    print(...)  # TODO распечатать множество уникальных  чисел
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sat, 16 Oct 2021 12:42:17 UTC
+record: -1

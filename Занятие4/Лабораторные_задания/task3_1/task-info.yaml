@@ -1,0 +1,48 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 0
+    length: 752
+    placeholder_text: '# TODO'
+    initial_state:
+      length: 6
+      offset: 0
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: |-
+      def get_count_char(str_):
+          # для начала переведем текст в нижний регистр
+          str_ = str_.lower()  # возвращается копия
+          char_dict = {}
+
+          for char in str_:
+              if char.isalpha():  # далее с помощью метода строк isalpha будем проверять, является ли символ буквой
+                  if char in char_dict:  # если символ уже есть среди ключей, то существующее значение увеличиваем на один
+                      char_dict[char] += 1
+                  else:  # в противном случае создаем новый элемент в словаре
+                      char_dict[char] = 1
+          return char_dict
+
+
+      def frequency_chars(char_dict):
+          total_count = sum(char_dict.values())
+
+          return {char: round(value / total_count, 3) for char, value in char_dict.items()}
+  text: "# TODO\n\n\nif __name__ == \"__main__\":\n    main_str = \"\"\"\n       \
+    \ Данное предложение будет разбиваться на отдельные слова. \n        В качеств\
+    е разделителя для встроенного метода split будет выбран символ пробела. На вых\
+    оде мы получим список отдельных слов. \n        Далее нужно отсортировать слов\
+    а в алфавитном порядке, а после сортировки склеить их с помощью метода строк join.\
+    \ Приступим!!!!\n    \"\"\"\n\n    ...\n"
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  time: Sun, 31 Oct 2021 10:02:00 UTC
+record: -1
+post_submission_on_open: true

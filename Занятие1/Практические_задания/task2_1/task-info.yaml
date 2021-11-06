@@ -1,0 +1,44 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    Введите строку Hello World: Hello World <class 'str'>
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 12
+    length: 83
+    placeholder_text: 'input()  # TODO заполните подсказку для функции input'
+    initial_state:
+      length: 53
+      offset: 12
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: 'input("Введите строку Hello World: ")'
+  - offset: 130
+    length: 82
+    placeholder_text: '# TODO c помощью функции print рачпечатайте значение переменной
+      input_str и её тип'
+    initial_state:
+      length: 82
+      offset: 67
+    initialized_from_dependency: false
+    selected: false
+    status: Solved
+    encrypted_possible_answer: print(input_str, type(input_str))
+  text: |
+    input_str = input()  # TODO заполните подсказку для функции input
+
+    # TODO c помощью функции print рачпечатайте значение переменной input_str и её тип
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sat, 16 Oct 2021 11:59:24 UTC
+record: -1

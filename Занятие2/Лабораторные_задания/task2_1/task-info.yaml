@@ -1,0 +1,57 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    *
+    **
+    ***
+    ****
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 46
+    length: 29
+    placeholder_text: '...  # TODO количество ступеней'
+    initial_state:
+      length: 31
+      offset: 46
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: 4
+  - offset: 89
+    length: 70
+    placeholder_text: '...:  # TODO как получить последовательность чисел?'
+    initial_state:
+      length: 51
+      offset: 91
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: 'range(1, count_stairs + 1):'
+  - offset: 173
+    length: 32
+    placeholder_text: '(...)  # TODO печать ступени'
+    initial_state:
+      length: 28
+      offset: 156
+    initialized_from_dependency: false
+    selected: false
+    status: Solved
+    encrypted_possible_answer: ("*" * i)
+  text: |
+    if __name__ == "__main__":
+        count_stairs = ...  # TODO количество ступеней
+        for i in ...:  # TODO как получить последовательность чисел?
+            print(...)  # TODO печать ступени
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 20 Oct 2021 07:02:01 UTC
+record: -1
